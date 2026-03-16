@@ -10,7 +10,7 @@ No database, no files, no network. Data lives only while the program runs.
 A dataclass representing one todo item.
 Fields:
 - id: int — auto-incremented, starts at 1
-- title: str — required
+- title: str — requiredzz
 - description: str — optional, defaults to ""
 - completed: bool — defaults to False
 

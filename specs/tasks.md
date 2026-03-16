@@ -6,7 +6,7 @@
 
 ---
 
-### T-001: Create Task dataclass
+### T-001: Create Task dataclass [x]
 - Description: Define the Task model with all required fields
 - Input: nothing (just a class definition)
 - Output: src/todo/models.py
@@ -15,7 +15,7 @@
 
 ---
 
-### T-002: Create in-memory Storage class
+### T-002: Create in-memory Storage class [x]
 - Description: Build the Storage class that holds a list of Task objects and manages IDs
 - Input: nothing at init
 - Output: src/todo/storage.py with add, get, get_all, update, delete methods
@@ -24,7 +24,7 @@
 
 ---
 
-### T-003: Implement add_task command
+### T-003: Implement add_task command [x]
 - Description: Function that validates title, creates a Task, adds to storage, returns confirmation
 - Input: storage instance, title (str), description (str)
 - Output: success message with new task ID, or error if title empty
@@ -33,7 +33,7 @@
 
 ---
 
-### T-004: Implement view_tasks command
+### T-004: Implement view_tasks command [x]
 - Description: Function that returns formatted list of all tasks with ID, status icon, title, description
 - Input: storage instance
 - Output: formatted string — table of tasks, or "No tasks yet." if empty
@@ -42,7 +42,7 @@
 
 ---
 
-### T-005: Implement update_task command
+### T-005: Implement update_task command [x]
 - Description: Function that finds a task by ID and updates title and/or description
 - Input: storage instance, task_id (int), new title (str), new description (str)
 - Output: success message, or error if ID not found
@@ -51,7 +51,7 @@
 
 ---
 
-### T-006: Implement delete_task command
+### T-006: Implement delete_task command [x]
 - Description: Function that removes a task by ID from storage
 - Input: storage instance, task_id (int)
 - Output: confirmation message with deleted task title, or error if ID not found
@@ -60,7 +60,7 @@
 
 ---
 
-### T-007: Implement toggle_complete command
+### T-007: Implement toggle_complete command [x]
 - Description: Function that flips a task's completed status between True and False
 - Input: storage instance, task_id (int)
 - Output: message showing new status (✓ complete / ○ incomplete), or error if ID not found
@@ -69,7 +69,7 @@
 
 ---
 
-### T-008: Build the CLI menu loop
+### T-008: Build the CLI menu loop [x]
 - Description: Interactive menu that prints options, reads input, calls command functions, loops until exit
 - Input: storage instance
 - Output: src/todo/cli.py with start_cli(storage) function
@@ -86,7 +86,7 @@ Menu options:
 
 ---
 
-### T-009: Create entry point and package init files
+### T-009: Create entry point and package init files [x]
 - Description: Wire everything together — main.py creates Storage, calls start_cli. Add __init__.py files.
 - Input: all previous tasks complete
 - Output: main.py, src/todo/__init__.py, src/__init__.py
@@ -95,7 +95,7 @@ Menu options:
 
 ---
 
-### T-010: Create README and CLAUDE.md
+### T-010: Create README and CLAUDE.md [x]
 - Description: Write setup instructions and Claude Code instructions
 - Input: completed working app
 - Output: README.md with UV setup steps, CLAUDE.md pointing to AGENTS.md
